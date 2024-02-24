@@ -1,10 +1,11 @@
 import logging
-from seedsigner.gui.components import SeedSignerIconConstants
+from seedsigner.gui.components import SeedSignerIconConstants, GUIConstants
 from seedsigner.hardware.microsd import MicroSD
 
-from .view import View, Destination, MainMenuView
+from .view import View, Destination, MainMenuView, PowerOptionsView, BackStackView
 
 from seedsigner.gui.screens import (RET_CODE__BACK_BUTTON, ButtonListScreen, settings_screens)
+from seedsigner.gui.screens.screen import WarningScreen
 from seedsigner.models.settings import Settings, SettingsConstants, SettingsDefinition
 
 logger = logging.getLogger(__name__)
@@ -12,8 +13,8 @@ logger = logging.getLogger(__name__)
 
 
 class SettingsMenuView(View):
-    IO_TEST = "I/O test"
-    DONATE = "Donate"
+    IO_TEST = _("I/O test")
+    DONATE = _("Donate")
 
     def __init__(self, visibility: str = SettingsConstants.VISIBILITY__GENERAL, selected_attr: str = None, initial_scroll: int = 0):
         super().__init__()
@@ -38,17 +39,17 @@ class SettingsMenuView(View):
                     break
 
         if self.visibility == SettingsConstants.VISIBILITY__GENERAL:
-            title = "Settings"
+            title = _("Settings")
 
             # Set up the next nested level of menuing
-            button_data.append(("Advanced", None, None, None, SeedSignerIconConstants.CHEVRON_RIGHT))
+            button_data.append((_("Advanced"), None, None, None, SeedSignerIconConstants.CHEVRON_RIGHT))
             next_destination = Destination(SettingsMenuView, view_args={"visibility": SettingsConstants.VISIBILITY__ADVANCED})
 
             button_data.append(self.IO_TEST)
             button_data.append(self.DONATE)
 
         elif self.visibility == SettingsConstants.VISIBILITY__ADVANCED:
-            title = "Advanced"
+            title = _("Advanced")
 
             # So far there are no real Developer options; disabling for now
             # button_data.append(("Developer Options", None, None, None, SeedSignerIconConstants.CHEVRON_RIGHT))
@@ -56,7 +57,7 @@ class SettingsMenuView(View):
             next_destination = None
         
         elif self.visibility == SettingsConstants.VISIBILITY__DEVELOPER:
-            title = "Dev Options"
+            title = _("Dev Options")
             next_destination = None
 
         selected_menu_num = self.run_screen(
@@ -87,6 +88,10 @@ class SettingsMenuView(View):
 
         elif len(button_data) > selected_menu_num and button_data[selected_menu_num] == self.DONATE:
             return Destination(DonateView)
+
+        elif settings_entries[selected_menu_num].attr_name == SettingsConstants.SETTING__LANGUAGE:
+            persistent_disabled = self.settings.get_value(SettingsConstants.SETTING__PERSISTENT_SETTINGS) == SettingsConstants.OPTION__DISABLED
+            return Destination(LanguageWarningView, view_args=dict(persistent_disabled=persistent_disabled, attr_name=settings_entries[selected_menu_num].attr_name, parent_initial_scroll=initial_scroll))
 
         else:
             return Destination(SettingsEntryUpdateSelectionView, view_args=dict(attr_name=settings_entries[selected_menu_num].attr_name, parent_initial_scroll=initial_scroll))
@@ -179,6 +184,10 @@ class SettingsEntryUpdateSelectionView(View):
             value=updated_value
         )
 
+        if self.settings_entry.attr_name == SettingsConstants.SETTING__LANGUAGE:
+            if initial_value != updated_value:
+                return Destination(PowerOptionsView, view_args=dict(show_back_button=False))
+
         if destination:
             return destination
 
@@ -187,6 +196,39 @@ class SettingsEntryUpdateSelectionView(View):
 
         return Destination(SettingsEntryUpdateSelectionView, view_args=dict(attr_name=self.settings_entry.attr_name, parent_initial_scroll=self.parent_initial_scroll, selected_button=self.selected_button), skip_current_view=True)
 
+
+class LanguageWarningView(View):
+    def __init__(self, persistent_disabled: bool, attr_name: str, parent_initial_scroll: int = 0):
+        super().__init__()
+        self.persistent_disabled = persistent_disabled
+        self.attr_name = attr_name
+        self.parent_initial_scroll = parent_initial_scroll
+
+    def run(self):
+        if self.persistent_disabled:
+            title = _("Persistent required!")
+            text = _("To change language, Persistent Settings should be enabled!")
+        else:
+            title = _("Reboot required!")
+            text = _("If language is changed, system will be rebooted!")
+
+        selected_menu_num = self.run_screen(
+            WarningScreen,
+            title=title,
+            status_headline=None,
+            text=text,
+            show_back_button=True,
+            is_button_text_centered=True,
+            button_data=None,
+            status_color=GUIConstants.DIRE_WARNING_COLOR,
+        )
+
+        if selected_menu_num == RET_CODE__BACK_BUTTON:
+            return Destination(BackStackView)
+        elif self.persistent_disabled:
+            return Destination(BackStackView)
+        else:
+            return Destination(SettingsEntryUpdateSelectionView, view_args=dict(attr_name=self.attr_name, parent_initial_scroll=self.parent_initial_scroll))
 
 
 class SettingsIngestSettingsQRView(View):
@@ -200,9 +242,9 @@ class SettingsIngestSettingsQRView(View):
         self.settings.update(settings_update_dict)
 
         if MicroSD.get_instance().is_inserted and self.settings.get_value(SettingsConstants.SETTING__PERSISTENT_SETTINGS) == SettingsConstants.OPTION__ENABLED:
-            self.status_message = "Persistent Settings enabled. Settings saved to SD card."
+            self.status_message = _("Persistent Settings enabled. Settings saved to SD card.")
         else:
-            self.status_message = "Settings updated in temporary memory"
+            self.status_message = _("Settings updated in temporary memory")
 
 
     def run(self):

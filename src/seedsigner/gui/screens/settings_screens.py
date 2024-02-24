@@ -21,7 +21,7 @@ class SettingsEntryUpdateSelectionScreen(ButtonListScreen):
     selected_button: int = 0
 
     def __post_init__(self):
-        self.title = "Settings"
+        self.title = _("Settings")
         self.is_bottom_list = True
         self.use_checked_selection_buttons = True
         if self.settings_entry_type == SettingsConstants.TYPE__MULTISELECT:
@@ -52,7 +52,7 @@ class SettingsEntryUpdateSelectionScreen(ButtonListScreen):
 @dataclass
 class IOTestScreen(BaseTopNavScreen):
     def __post_init__(self):
-        self.title = "I/O Test"
+        self.title = _("I/O Test")
         self.show_back_button = False
         self.resolution = (96, 96)
         self.framerate = 10
@@ -123,7 +123,7 @@ class IOTestScreen(BaseTopNavScreen):
 
         # Hardware keys UI
         font = Fonts.get_font(GUIConstants.BUTTON_FONT_NAME, GUIConstants.BUTTON_FONT_SIZE)
-        (left, top, text_width, bottom) = font.getbbox(text="Clear", anchor="ls")
+        (left, top, text_width, bottom) = font.getbbox(text=_("Clear"), anchor="ls")
         icon = Icon(
             icon_name=FontAwesomeIconConstants.CAMERA, 
             icon_size=GUIConstants.ICON_INLINE_FONT_SIZE,
@@ -154,7 +154,7 @@ class IOTestScreen(BaseTopNavScreen):
         self.components.append(self.key1_button)
 
         self.key3_button = Button(
-            text="Exit",
+            text=_("Exit"),
             width=key_button_width,
             height=key_button_height,
             screen_x=self.canvas_width - key_button_width + GUIConstants.EDGE_PADDING,
@@ -168,7 +168,7 @@ class IOTestScreen(BaseTopNavScreen):
         cur_selected_button = self.key1_button
         msg_height = GUIConstants.ICON_LARGE_BUTTON_SIZE + 2*GUIConstants.COMPONENT_PADDING
         camera_message = TextArea(
-            text="Capturing image...",
+            text=_("Capturing image..."),
             font_size=GUIConstants.TOP_NAV_TITLE_FONT_SIZE,
             is_text_centered=True,
             height=msg_height,
@@ -214,7 +214,7 @@ class IOTestScreen(BaseTopNavScreen):
                     )
                     with self.renderer.lock:
                         self.canvas.paste(display_version, (0, self.top_nav.height))
-                        self.key2_button.text = "Clear"
+                        self.key2_button.text = _("Clear")
                         for component in self.components:
                             component.render()
                         self.renderer.show_image()
@@ -281,11 +281,11 @@ class IOTestScreen(BaseTopNavScreen):
 @dataclass
 class DonateScreen(BaseTopNavScreen):
     def __post_init__(self):
-        self.title = "Donate"
+        self.title = _("Donate")
         super().__post_init__()
 
         self.components.append(TextArea(
-            text="SeedSigner is 100% free & open source, funded solely by the Bitcoin community.\n\nDonate onchain or LN at:",
+            text=_("SeedSigner is 100% free & open source, funded solely by the Bitcoin community.\n\nDonate onchain or LN at:"),
             screen_y=self.top_nav.height + 3*GUIConstants.COMPONENT_PADDING,
         ))
 
@@ -302,8 +302,8 @@ class DonateScreen(BaseTopNavScreen):
 @dataclass
 class SettingsQRConfirmationScreen(ButtonListScreen):
     config_name: str = None
-    title: str = "Settings QR"
-    status_message: str = "Settings updated..."
+    title: str = _("Settings QR")
+    status_message: str = _("Settings updated...")
     is_bottom_list: bool = True
 
     def __post_init__(self):

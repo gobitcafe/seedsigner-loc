@@ -707,7 +707,7 @@ class QRDisplayScreen(BaseScreen):
             TextArea(
                 image_draw=img_draw,
                 canvas=rectangle,
-                text="Brighter",
+                text=_("Brighter"),
                 font_size=GUIConstants.BODY_FONT_SIZE,
                 font_name=GUIConstants.BUTTON_FONT_NAME,
                 background_color=(0, 0, 0, overlay_opacity),
@@ -723,7 +723,7 @@ class QRDisplayScreen(BaseScreen):
             TextArea(
                 image_draw=img_draw,
                 canvas=rectangle,
-                text="Darker",
+                text=_("Darker"),
                 font_size=GUIConstants.BODY_FONT_SIZE,
                 font_name=GUIConstants.BUTTON_FONT_NAME,
                 background_color=(0, 0, 0, overlay_opacity),
@@ -820,11 +820,11 @@ class QRDisplayScreen(BaseScreen):
 
 @dataclass
 class LargeIconStatusScreen(ButtonListScreen):
-    title: str = "Success!"
+    title: str = _("Success!")
     status_icon_name: str = SeedSignerIconConstants.SUCCESS
     status_icon_size: int = GUIConstants.ICON_PRIMARY_SCREEN_SIZE
     status_color: str = GUIConstants.SUCCESS_COLOR
-    status_headline: str = "Success!"  # The colored text under the large icon
+    status_headline: str = _("Success!")  # The colored text under the large icon
     text: str = ""                          # The body text of the screen
     text_edge_padding: int = GUIConstants.EDGE_PADDING
     button_data: list = None
@@ -834,7 +834,7 @@ class LargeIconStatusScreen(ButtonListScreen):
     def __post_init__(self):
         self.is_bottom_list: bool = True
         if not self.button_data:
-            self.button_data = ["OK"]
+            self.button_data = [_("OK")]
         super().__post_init__()
 
         self.status_icon = Icon(
@@ -947,14 +947,14 @@ class WarningEdgesMixin:
 
 @dataclass
 class WarningScreen(WarningEdgesMixin, LargeIconStatusScreen):
-    title: str = "Caution"
+    title: str = _("Caution")
     status_icon_name: str = SeedSignerIconConstants.WARNING
     status_color: str = "yellow"
-    status_headline: str = "Privacy Leak!"     # The colored text under the alert icon
+    status_headline: str = _("Privacy Leak!")     # The colored text under the alert icon
 
     def __post_init__(self):
         if not self.button_data:
-            self.button_data = ["I Understand"]
+            self.button_data = [_("I Understand")]
 
         super().__post_init__()
 
@@ -962,7 +962,7 @@ class WarningScreen(WarningEdgesMixin, LargeIconStatusScreen):
 
 @dataclass
 class DireWarningScreen(WarningScreen):
-    status_headline: str = "Classified Info!"     # The colored text under the alert icon
+    status_headline: str = _("Classified Info!")     # The colored text under the alert icon
     status_color: str = GUIConstants.DIRE_WARNING_COLOR
 
 
@@ -970,12 +970,12 @@ class DireWarningScreen(WarningScreen):
 @dataclass
 class ResetScreen(BaseTopNavScreen):
     def __post_init__(self):
-        self.title = "Restarting"
+        self.title = _("Restarting")
         self.show_back_button = False
         super().__post_init__()
 
         self.components.append(TextArea(
-            text="SeedSigner is restarting.\n\nAll in-memory data will be wiped.",
+            text=_("SeedSigner is restarting.\n\nAll in-memory data will be wiped."),
             screen_y=self.top_nav.height,
             height=self.canvas_height - self.top_nav.height,
         ))
@@ -985,12 +985,12 @@ class ResetScreen(BaseTopNavScreen):
 @dataclass
 class PowerOffScreen(BaseTopNavScreen):
     def __post_init__(self):
-        self.title = "Powering Off"
+        self.title = _("Powering Off")
         self.show_back_button = False
         super().__post_init__()
 
         self.components.append(TextArea(
-            text="Please wait about 30 seconds before disconnecting power.",
+            text=_("Please wait about 30 seconds before disconnecting power."),
             screen_y=self.top_nav.height,
             height=self.canvas_height - self.top_nav.height,
         ))
@@ -1000,12 +1000,12 @@ class PowerOffScreen(BaseTopNavScreen):
 @dataclass
 class PowerOffNotRequiredScreen(BaseTopNavScreen):
     def __post_init__(self):
-        self.title = "Just Unplug It"
+        self.title = _("Just Unplug It")
         self.show_back_button = True
         super().__post_init__()
 
         self.components.append(TextArea(
-            text="It is safe to disconnect power at any time.",
+            text=_("It is safe to disconnect power at any time."),
             screen_y=self.top_nav.height,
             height=self.canvas_height - self.top_nav.height,
         ))

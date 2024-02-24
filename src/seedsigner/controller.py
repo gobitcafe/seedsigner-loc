@@ -209,14 +209,14 @@ class Controller(Singleton):
         if seed_num < len(self.storage.seeds):
             return self.storage.seeds[seed_num]
         else:
-            raise Exception(f"There is no seed_num {seed_num}; only {len(self.storage.seeds)} in memory.")
+            raise Exception(_("There is no seed_num %d; only %d in memory.") % (seed_num, len(self.storage.seeds)))
 
 
     def discard_seed(self, seed_num: int):
         if seed_num < len(self.storage.seeds):
             del self.storage.seeds[seed_num]
         else:
-            raise Exception(f"There is no seed_num {seed_num}; only {len(self.storage.seeds)} in memory.")
+            raise Exception(_("There is no seed_num %d; only %d in memory.") % (seed_num, len(self.storage.seeds)))
 
 
     def pop_prev_from_back_stack(self):

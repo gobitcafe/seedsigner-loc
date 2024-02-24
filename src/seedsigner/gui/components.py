@@ -203,23 +203,44 @@ class Fonts(Singleton):
 
     @classmethod
     def get_font(cls, font_name, size, file_extension: str = "ttf") -> ImageFont.FreeTypeFont:
+        if font_name in [GUIConstants.ICON_FONT_NAME__FONT_AWESOME, GUIConstants.ICON_FONT_NAME__SEEDSIGNER]:
+            file_extension = "otf"
+
+        font_name = cls.get_locale_font(font_name)
+
+        if font_name.endswith(".otf") or font_name.endswith(".ttf"):
+            font_file_name = font_name
+            font_name = font_name[:-4]
+        else:
+            font_file_name = f"{font_name}.{file_extension}"
+
         # Cache already-loaded fonts
         if font_name not in cls.fonts:
             cls.fonts[font_name] = {}
         
-        if font_name in [GUIConstants.ICON_FONT_NAME__FONT_AWESOME, GUIConstants.ICON_FONT_NAME__SEEDSIGNER]:
-            file_extension = "otf"
-        
         if size not in cls.fonts[font_name]:
             try:
-                cls.fonts[font_name][size] = ImageFont.truetype(os.path.join(cls.font_path, f"{font_name}.{file_extension}"), size)
+                cls.fonts[font_name][size] = ImageFont.truetype(os.path.join(cls.font_path, font_file_name), size)
             except OSError as e:
                 if "cannot open resource" in str(e):
-                    raise Exception(f"Font {font_name}.ttf not found: {repr(e)}")
+                    raise Exception(f"Font {font_name}.{file_extension} not found: {repr(e)}")
                 else:
                     raise e
 
         return cls.fonts[font_name][size]
+    
+    @classmethod
+    def get_locale_font(cls, font_name) -> str:
+        # use locale font based on language
+        # TODO: add locale fonts here for other languages
+        _lang = os.environ["LANG"]
+        if _lang == "ko":
+            if font_name == "OpenSans-Regular":
+                font_name = "NotoSerifKR-Regular.otf"
+            if font_name == "OpenSans-SemiBold":
+                font_name = "NotoSerifKR-SemiBold.otf"
+
+        return font_name
 
 
 

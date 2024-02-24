@@ -1,0 +1,1371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2024-02-19 16:58-0800\n"
+"PO-Revision-Date: 2024-02-24 11:11-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: pygettext.py 1.5\n"
+"X-Generator: Poedit 3.4.2\n"
+
+#: .\seedsigner\controller.py:212 .\seedsigner\controller.py:219
+msgid "There is no seed_num %d; only %d in memory."
+msgstr "시드번호 %d가 없습니다; 메모리 안에 %d 개의 시드만 있음."
+
+#: .\seedsigner\gui\screens\psbt_screens.py:28
+msgid "Review PSBT"
+msgstr "PSBT 검토"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:30
+msgid "Review Details"
+msgstr "상세 검토"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:87
+msgid "1 input"
+msgstr "1 입력"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:89
+#: .\seedsigner\gui\screens\psbt_screens.py:90
+#: .\seedsigner\gui\screens\psbt_screens.py:92
+#: .\seedsigner\gui\screens\psbt_screens.py:93
+#: .\seedsigner\gui\screens\psbt_screens.py:96
+msgid "input %d"
+msgstr "입력 %d"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:136
+msgid "self-transfer"
+msgstr "자기전송"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:139
+#: .\seedsigner\gui\screens\psbt_screens.py:141
+msgid "recipient %d"
+msgstr "수신자 %d"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:143
+#: .\seedsigner\gui\screens\psbt_screens.py:554
+msgid "fee"
+msgstr "요금"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:147
+#: .\seedsigner\gui\screens\psbt_screens.py:564
+msgid "change"
+msgstr "잔돈"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:458
+msgid "PSBT Math"
+msgstr "PSBT 계산"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:459
+msgid "Review Recipients"
+msgstr "수신자 검토"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:536
+msgid "input"
+msgstr "입력"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:536
+msgid "inputs"
+msgstr "입력"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:547
+msgid "recipient"
+msgstr "수신자"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:547
+msgid "recipients"
+msgstr "수신자"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:627
+#: .\seedsigner\views\psbt_views.py:331
+msgid "Your Change"
+msgstr "당신의 잔돈"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:670
+msgid "Address verified!"
+msgstr "주소가 검증되었습니다!"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:682
+msgid "Sign PSBT"
+msgstr "PSBT 서명"
+
+#: .\seedsigner\gui\screens\psbt_screens.py:696
+msgid "Click to authorize this transaction"
+msgstr "트랜잭션을 승인하기 위해 클릭하세요"
+
+#: .\seedsigner\gui\screens\scan_screens.py:56
+msgid "< back  |  "
+msgstr "< 이전  |  "
+
+#: .\seedsigner\gui\screens\scan_screens.py:102
+msgid "% Complete"
+msgstr "% 완료"
+
+#: .\seedsigner\gui\screens\screen.py:710
+msgid "Brighter"
+msgstr "더 밝게"
+
+#: .\seedsigner\gui\screens\screen.py:726
+msgid "Darker"
+msgstr "더 어둡게"
+
+#: .\seedsigner\gui\screens\screen.py:823
+#: .\seedsigner\gui\screens\screen.py:827 .\seedsigner\views\seed_views.py:1268
+#: .\seedsigner\views\seed_views.py:1512
+msgid "Success!"
+msgstr "성공!"
+
+#: .\seedsigner\gui\screens\screen.py:837 .\seedsigner\views\seed_views.py:1270
+#: .\seedsigner\views\seed_views.py:1515 .\seedsigner\views\seed_views.py:1869
+#: .\seedsigner\views\view.py:365
+msgid "OK"
+msgstr "OK"
+
+#: .\seedsigner\gui\screens\screen.py:950 .\seedsigner\views\psbt_views.py:439
+msgid "Caution"
+msgstr "주의"
+
+#: .\seedsigner\gui\screens\screen.py:953 .\seedsigner\views\seed_views.py:766
+msgid "Privacy Leak!"
+msgstr "개인정보 유출!"
+
+#: .\seedsigner\gui\screens\screen.py:957
+msgid "I Understand"
+msgstr "알겠습니다"
+
+#: .\seedsigner\gui\screens\screen.py:965
+msgid "Classified Info!"
+msgstr "기밀 정보!"
+
+#: .\seedsigner\gui\screens\screen.py:973
+msgid "Restarting"
+msgstr "재시작 중"
+
+#: .\seedsigner\gui\screens\screen.py:978
+msgid ""
+"SeedSigner is restarting.\n"
+"\n"
+"All in-memory data will be wiped."
+msgstr ""
+"시드사이너를 재시작합니다\n"
+"\n"
+"모든 메모리 데이타가 삭제됩니다."
+
+#: .\seedsigner\gui\screens\screen.py:988
+msgid "Powering Off"
+msgstr "전원 종료중"
+
+#: .\seedsigner\gui\screens\screen.py:993
+msgid "Please wait about 30 seconds before disconnecting power."
+msgstr "전원 연결을 끊기 전 약 30초를 기다려 주십시오."
+
+#: .\seedsigner\gui\screens\screen.py:1003
+msgid "Just Unplug It"
+msgstr "전원을 뽑으세요"
+
+#: .\seedsigner\gui\screens\screen.py:1008
+msgid "It is safe to disconnect power at any time."
+msgstr "언제나 전원을 그냥 뽑으셔도 안전합니다."
+
+#: .\seedsigner\gui\screens\seed_screens.py:409
+msgid "Finalize Seed"
+msgstr "시드 완결하기"
+
+#: .\seedsigner\gui\screens\seed_screens.py:533
+msgid "BIP-85 Index"
+msgstr "BIP-85 인덱스"
+
+#: .\seedsigner\gui\screens\seed_screens.py:549
+msgid "Verify Backup?"
+msgstr "백업 검증?"
+
+#: .\seedsigner\gui\screens\seed_screens.py:555
+msgid "Optionally verify that your mnemonic backup is correct."
+msgstr "옵션으로 니모닉 백업이 맞는 지 검증합니다."
+
+#: .\seedsigner\gui\screens\seed_screens.py:565
+msgid "Derivation Path"
+msgstr "파생 경로"
+
+#: .\seedsigner\gui\screens\seed_screens.py:581
+msgid "Xpub Details"
+msgstr "Xpub 상세"
+
+#: .\seedsigner\gui\screens\seed_screens.py:587
+#: .\seedsigner\gui\screens\seed_screens.py:591
+#: .\seedsigner\views\seed_views.py:431 .\seedsigner\views\seed_views.py:590
+#: .\seedsigner\views\seed_views.py:625 .\seedsigner\views\seed_views.py:723
+msgid "Export Xpub"
+msgstr "Xpub 내보내기"
+
+#: .\seedsigner\gui\screens\seed_screens.py:600
+#: .\seedsigner\gui\screens\tools_screens.py:404
+msgid "Fingerprint"
+msgstr "지문(Fingerprint)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:610
+#: .\seedsigner\gui\screens\tools_screens.py:413
+#: .\seedsigner\gui\screens\tools_screens.py:421
+msgid "Derivation"
+msgstr "파생(derivation)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:620
+msgid "Xpub"
+msgstr "Xpub"
+
+#: .\seedsigner\gui\screens\seed_screens.py:633
+#: .\seedsigner\views\seed_views.py:291
+msgid "BIP-39 Passphrase"
+msgstr "BIP-39 Passphrase"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1019
+msgid "Verify Passphrase"
+msgstr "Passphrase 검사"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1084
+msgid "Standard"
+msgstr "표준(Standard)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1085
+msgid "BIP-39 wordlist indices"
+msgstr "BIP-39 단어리스트 인덱스"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1092
+msgid "Compact"
+msgstr "압축(Compact)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1093
+msgid "Raw entropy bits"
+msgstr "엔트로피 비트들"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1107
+msgid "Transcribe SeedQR"
+msgstr "SeedQR 표기"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1108
+msgid "Begin %s"
+msgstr "%s 시작"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1185
+msgid "click to exit"
+msgstr "나가려면 클릭"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1321
+msgid ""
+"Optionally scan your transcribed SeedQR to confirm that it reads back "
+"correctly."
+msgstr "옵션으로 SeedQR을 다시 스캔하여 맞는 지 확인합니다."
+
+#: .\seedsigner\gui\screens\seed_screens.py:1378
+#: .\seedsigner\views\seed_views.py:93 .\seedsigner\views\seed_views.py:1596
+msgid "Verify Address"
+msgstr "주소 검증"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1381
+#: .\seedsigner\views\seed_views.py:1692
+msgid "Skip 10"
+msgstr "10개 건너뛰기"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1381
+#: .\seedsigner\views\seed_views.py:1693 .\seedsigner\views\seed_views.py:1836
+msgid "Cancel"
+msgstr "취소"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1442
+msgid "Checking address %d"
+msgstr "주소 %d 검사"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1459
+msgid "Multisig Verification"
+msgstr "다중서명 검증"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1464
+msgid ""
+"Load your multisig wallet descriptor to verify your receive/self-transfer or "
+"change address."
+msgstr ""
+"수신/자기전송 및 잔돈 주소를 검사하기 위해 다중서명 월렛 서술자를 로드합니다."
+
+#: .\seedsigner\gui\screens\seed_screens.py:1477
+msgid "Descriptor Loaded"
+msgstr "서술자 로드됨"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1482
+msgid "Policy"
+msgstr "정책(Policy)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1490
+msgid "Signing Keys"
+msgstr "서명 키들"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1526
+msgid "Review Message"
+msgstr "메시지 검토"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1528
+msgid "Message (pt %d)"
+msgstr "메시지 (pt %d)"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1531
+#: .\seedsigner\views\psbt_views.py:259 .\seedsigner\views\psbt_views.py:287
+#: .\seedsigner\views\seed_views.py:952 .\seedsigner\views\tools_views.py:387
+msgid "Next"
+msgstr "다음"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1550
+msgid "Confirm Address"
+msgstr "주소 확인"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1553
+#: .\seedsigner\views\seed_views.py:100 .\seedsigner\views\seed_views.py:433
+msgid "Sign Message"
+msgstr "메시지 서명"
+
+#: .\seedsigner\gui\screens\seed_screens.py:1559
+msgid "derivation path"
+msgstr "파생 경로"
+
+#: .\seedsigner\gui\screens\settings_screens.py:24
+#: .\seedsigner\views\settings_views.py:42 .\seedsigner\views\view.py:187
+msgid "Settings"
+msgstr "설정"
+
+#: .\seedsigner\gui\screens\settings_screens.py:55
+msgid "I/O Test"
+msgstr "입출력(I/O) 테스트"
+
+#: .\seedsigner\gui\screens\settings_screens.py:126
+#: .\seedsigner\gui\screens\settings_screens.py:217
+msgid "Clear"
+msgstr "지우기"
+
+#: .\seedsigner\gui\screens\settings_screens.py:157
+msgid "Exit"
+msgstr "나가기"
+
+#: .\seedsigner\gui\screens\settings_screens.py:171
+#: .\seedsigner\gui\screens\tools_screens.py:63
+msgid "Capturing image..."
+msgstr "이미지 캡쳐중..."
+
+#: .\seedsigner\gui\screens\settings_screens.py:284
+#: .\seedsigner\views\settings_views.py:17
+msgid "Donate"
+msgstr "기증"
+
+#: .\seedsigner\gui\screens\settings_screens.py:288
+msgid ""
+"SeedSigner is 100% free & open source, funded solely by the Bitcoin "
+"community.\n"
+"\n"
+"Donate onchain or LN at:"
+msgstr ""
+"SeedSigner는 100% 무료인 오픈 소스이며, 오직 비트코인 커뮤너티에 의해 지원받"
+"습니다.\n"
+"\n"
+"온체인 혹은 LN 으로 기증:"
+
+#: .\seedsigner\gui\screens\settings_screens.py:305
+msgid "Settings QR"
+msgstr "설정 QR"
+
+#: .\seedsigner\gui\screens\settings_screens.py:306
+msgid "Settings updated..."
+msgstr "설정이 갱신됨..."
+
+#: .\seedsigner\gui\screens\tools_screens.py:19
+msgid "Initializing Camera..."
+msgstr "카메라 초기화중..."
+
+#: .\seedsigner\gui\screens\tools_screens.py:82
+msgid "< back  |  click joystick"
+msgstr "< 이전 | 조이스틱 클릭"
+
+#: .\seedsigner\gui\screens\tools_screens.py:112
+msgid " < reshoot  |  accept > "
+msgstr " < 재촬영 | 수락 > "
+
+#: .\seedsigner\gui\screens\tools_screens.py:131
+msgid "Dice Roll 1/%d"
+msgstr "주사위 롤 1/%d"
+
+#: .\seedsigner\gui\screens\tools_screens.py:162
+msgid "Dice Roll %d/%d"
+msgstr "주사위 롤 %d/%d"
+
+#: .\seedsigner\gui\screens\tools_screens.py:173
+msgid "Build Final Word"
+msgstr "마지막 단어 생성"
+
+#: .\seedsigner\gui\screens\tools_screens.py:179
+msgid ""
+"The %dth word is built from %d more entropy bits plus auto-calculated "
+"checksum."
+msgstr ""
+"%d번 단어는 %d 엔트로피 비트들과 자동계산되는 체크섬으로부터 생성됩니다."
+
+#: .\seedsigner\gui\screens\tools_screens.py:189
+msgid "Coin Flip 1/%d"
+msgstr "동전 던지기 1/%d"
+
+#: .\seedsigner\gui\screens\tools_screens.py:211
+msgid "Coin Flip %d/%d"
+msgstr "동전 던지기 %d/%d"
+
+#: .\seedsigner\gui\screens\tools_screens.py:253
+msgid "Your input: \"%s\""
+msgstr "당신의 입력: \"%s\""
+
+#: .\seedsigner\gui\screens\tools_screens.py:288
+msgid "Checksum"
+msgstr "체크섬"
+
+#: .\seedsigner\gui\screens\tools_screens.py:324
+msgid "Final Word: \"%s\""
+msgstr "마지막 단어: \"%s\""
+
+#: .\seedsigner\gui\screens\tools_screens.py:365
+msgid "%dth Word"
+msgstr "%d번 단어"
+
+#: .\seedsigner\gui\screens\tools_screens.py:396
+#: .\seedsigner\views\seed_views.py:432 .\seedsigner\views\seed_views.py:627
+#: .\seedsigner\views\seed_views.py:1868 .\seedsigner\views\tools_views.py:31
+#: .\seedsigner\views\tools_views.py:456
+msgid "Address Explorer"
+msgstr "주소 탐색기"
+
+#: .\seedsigner\gui\screens\tools_screens.py:429
+msgid "Wallet descriptor"
+msgstr "월렛 서술자"
+
+#: .\seedsigner\gui\toast.py:200
+msgid ""
+"You can remove\n"
+"the SD card now"
+msgstr ""
+"SD 카드를 지금\n"
+"제거할 수 있습니다"
+
+#: .\seedsigner\gui\toast.py:220
+msgid "SD card inserted"
+msgstr "SD 카드 삽입됨"
+
+#: .\seedsigner\gui\toast.py:220
+msgid "SD card removed"
+msgstr "SD 카드 제거됨"
+
+#: .\seedsigner\models\settings.py:51
+msgid "Unsupported SettingsQR version: %s"
+msgstr "미지원 SettingsQR 버전: %s"
+
+#: .\seedsigner\models\settings_definition.py:13
+msgid "Enabled"
+msgstr "활성화"
+
+#: .\seedsigner\models\settings_definition.py:14
+#: .\seedsigner\models\settings_definition.py:17
+#: .\seedsigner\models\settings_definition.py:22
+msgid "Disabled"
+msgstr "비활성화"
+
+#: .\seedsigner\models\settings_definition.py:20
+#: .\seedsigner\models\settings_definition.py:28
+msgid "Prompt"
+msgstr "질의"
+
+#: .\seedsigner\models\settings_definition.py:21
+#: .\seedsigner\models\settings_definition.py:25
+#: .\seedsigner\models\settings_definition.py:31
+msgid "Required"
+msgstr "필수"
+
+#: .\seedsigner\models\settings_definition.py:41
+msgid "BlueWallet"
+msgstr "블루월렛"
+
+#: .\seedsigner\models\settings_definition.py:42
+msgid "Nunchuk"
+msgstr "넌척 월렛"
+
+#: .\seedsigner\models\settings_definition.py:43
+msgid "Sparrow"
+msgstr "Sparrow 월렛"
+
+#: .\seedsigner\models\settings_definition.py:44
+msgid "Specter Desktop"
+msgstr "Specter Desktop"
+
+#: .\seedsigner\models\settings_definition.py:45
+msgid "Keeper"
+msgstr "키퍼(Keeper)"
+
+#: .\seedsigner\models\settings_definition.py:62
+msgid "Threshold at 0.01"
+msgstr "0.01 기준으로 변환"
+
+#: .\seedsigner\models\settings_definition.py:63
+msgid "BTC | sats hybrid"
+msgstr "BTC | sats 혼합"
+
+#: .\seedsigner\models\settings_definition.py:82
+msgid "Low"
+msgstr "낮음"
+
+#: .\seedsigner\models\settings_definition.py:83
+msgid "Medium"
+msgstr "중간"
+
+#: .\seedsigner\models\settings_definition.py:84
+msgid "High"
+msgstr "높음"
+
+#: .\seedsigner\models\settings_definition.py:106
+msgid "Store Settings on SD card"
+msgstr "SD 카드에 설정을 저장합니다"
+
+#: .\seedsigner\models\settings_definition.py:107
+msgid "Insert SD card to enable"
+msgstr "활성화를 위해 SD 카드를 넣으세요"
+
+#: .\seedsigner\models\settings_definition.py:108
+msgid "If language is changed, you need to reboot system."
+msgstr "언어가 변경되면, 시스템을 재부팅해야 합니다."
+
+#: .\seedsigner\models\settings_definition.py:113
+#: .\seedsigner\views\seed_views.py:573
+msgid "Single Sig"
+msgstr "단일 서명"
+
+#: .\seedsigner\models\settings_definition.py:114
+#: .\seedsigner\views\seed_views.py:574
+msgid "Multisig"
+msgstr "다중 서명(Multisig)"
+
+#: .\seedsigner\models\settings_definition.py:123
+msgid "Native Segwit"
+msgstr "네이티브 세그윗"
+
+#: .\seedsigner\models\settings_definition.py:124
+msgid "Nested Segwit (legacy)"
+msgstr "네이티브 세그윗 (레거시)"
+
+#: .\seedsigner\models\settings_definition.py:125
+msgid "Taproot"
+msgstr "탭루트"
+
+#: .\seedsigner\models\settings_definition.py:126
+msgid "Custom Derivation"
+msgstr "커스텀 파생"
+
+#: .\seedsigner\models\settings_definition.py:342
+msgid "Language"
+msgstr "언어"
+
+#: .\seedsigner\models\settings_definition.py:353
+msgid "Mnemonic language"
+msgstr "니모닉 언어"
+
+#: .\seedsigner\models\settings_definition.py:362
+msgid "Persistent settings"
+msgstr "설정 저장 기능"
+
+#: .\seedsigner\models\settings_definition.py:369
+msgid "Coordinator software"
+msgstr "코디네이터 월렛"
+
+#: .\seedsigner\models\settings_definition.py:382
+msgid "Denomination display"
+msgstr "단위 표시"
+
+#: .\seedsigner\models\settings_definition.py:391
+msgid "Bitcoin network"
+msgstr "비트코인 네트워크"
+
+#: .\seedsigner\models\settings_definition.py:399
+msgid "QR code density"
+msgstr "QR 코드 밀도"
+
+#: .\seedsigner\models\settings_definition.py:407
+msgid "Xpub export"
+msgstr "Xpub 내보내기"
+
+#: .\seedsigner\models\settings_definition.py:414
+msgid "Sig types"
+msgstr "Sig 타입들"
+
+#: .\seedsigner\models\settings_definition.py:423
+msgid "Script types"
+msgstr "스크립트 유형들"
+
+#: .\seedsigner\models\settings_definition.py:431
+msgid "Show xpub details"
+msgstr "Xpub 상세정보 표시"
+
+#: .\seedsigner\models\settings_definition.py:437
+msgid "BIP-39 passphrase"
+msgstr "BIP-39 Passphrase"
+
+#: .\seedsigner\models\settings_definition.py:446
+msgid "Camera rotation"
+msgstr "카메라 회전"
+
+#: .\seedsigner\models\settings_definition.py:454
+msgid "CompactSeedQR"
+msgstr "압축 SeedQR"
+
+#: .\seedsigner\models\settings_definition.py:461
+msgid "BIP-85 child seeds"
+msgstr "BIP-85 자식 시드"
+
+#: .\seedsigner\models\settings_definition.py:467
+msgid "Message signing"
+msgstr "메시지 서명"
+
+#: .\seedsigner\models\settings_definition.py:474
+msgid "Show privacy warnings"
+msgstr "Privacy 경고 표시"
+
+#: .\seedsigner\models\settings_definition.py:481
+msgid "Show dire warnings"
+msgstr "심각한 경고 표시"
+
+#: .\seedsigner\models\settings_definition.py:487
+msgid "Show QR brightness tips"
+msgstr "QR 밝기 팁 표시"
+
+#: .\seedsigner\models\settings_definition.py:494
+msgid "Show partner logos"
+msgstr "파트너 로고 표시"
+
+#: .\seedsigner\models\settings_definition.py:510
+msgid "QR background color"
+msgstr "QR 배경색"
+
+#: .\seedsigner\views\psbt_views.py:18 .\seedsigner\views\seed_views.py:79
+#: .\seedsigner\views\tools_views.py:440
+msgid "Scan a seed"
+msgstr "시드 스캔"
+
+#: .\seedsigner\views\psbt_views.py:19 .\seedsigner\views\seed_views.py:80
+#: .\seedsigner\views\seed_views.py:164 .\seedsigner\views\tools_views.py:442
+msgid "Enter 12-word seed"
+msgstr "12 단어 시드 입력"
+
+#: .\seedsigner\views\psbt_views.py:20 .\seedsigner\views\seed_views.py:81
+#: .\seedsigner\views\seed_views.py:165 .\seedsigner\views\tools_views.py:443
+msgid "Enter 24-word seed"
+msgstr "24 단어 시드 입력"
+
+#: .\seedsigner\views\psbt_views.py:51
+msgid "Select Signer"
+msgstr "서명자 선택"
+
+#: .\seedsigner\views\psbt_views.py:91
+msgid "Parsing PSBT..."
+msgstr "PSBT 해석중..."
+
+#: .\seedsigner\views\psbt_views.py:164
+msgid "Unsupported Script Type!"
+msgstr "미지원 스크립트 타입!"
+
+#: .\seedsigner\views\psbt_views.py:165
+msgid ""
+"PSBT has unsupported input script type, please verify your change addresses."
+msgstr "PSBT가 미지원 입력 스크립트 타입을 가짐, 잔돈 주소를 확인하세요."
+
+#: .\seedsigner\views\psbt_views.py:166 .\seedsigner\views\psbt_views.py:186
+#: .\seedsigner\views\view.py:422
+msgid "Continue"
+msgstr "계속"
+
+#: .\seedsigner\views\psbt_views.py:184
+msgid "Full Spend!"
+msgstr "모든 코인 사용!"
+
+#: .\seedsigner\views\psbt_views.py:185
+msgid ""
+"This PSBT spends its entire input value. No change is coming back to your "
+"wallet."
+msgstr ""
+"이 PSBT는 모든 입력값을 소비하고 있습니다. 당신의 지갑에 들어 갈 잔돈은 없습"
+"니다."
+
+#: .\seedsigner\views\psbt_views.py:252
+msgid "Will Send"
+msgstr "보내기"
+
+#: .\seedsigner\views\psbt_views.py:257
+msgid "Next Recipient"
+msgstr "다음 수신자"
+
+#: .\seedsigner\views\psbt_views.py:288 .\seedsigner\views\psbt_views.py:332
+msgid "Verify Multisig Change"
+msgstr "다중서명 잔돈 검사"
+
+#: .\seedsigner\views\psbt_views.py:334
+msgid "Self-Transfer"
+msgstr "자기전송"
+
+#: .\seedsigner\views\psbt_views.py:335
+msgid "Verify Multisig Addr"
+msgstr "다중서명 주소 검사"
+
+#: .\seedsigner\views\psbt_views.py:354
+msgid "Verifying Change..."
+msgstr "잔돈 검사중..."
+
+#: .\seedsigner\views\psbt_views.py:356
+msgid "Verifying Self-Transfer..."
+msgstr "자기전송 검사중..."
+
+#: .\seedsigner\views\psbt_views.py:441
+msgid ""
+"PSBT's change address could not be verified with your multisig wallet "
+"descriptor."
+msgstr "PSBT 잔돈 주소는 당신의 다중서명 월렛 서술자로 검증될 수 없습니다."
+
+#: .\seedsigner\views\psbt_views.py:443
+msgid ""
+"PSBT's self-transfer address could not be verified with your multisig wallet "
+"descriptor."
+msgstr "PSBT 자가전송 주소는 당신의 다중서명 월렛 서술자로 검증될 수 없습니다."
+
+#: .\seedsigner\views\psbt_views.py:445
+msgid "Suspicious PSBT"
+msgstr "의심스러운 PSBT"
+
+#: .\seedsigner\views\psbt_views.py:447
+msgid "PSBT's change address could not be generated from your seed."
+msgstr "PSBT 잔돈 주소는 당신의 시드로부터 생성될 수 없습니다."
+
+#: .\seedsigner\views\psbt_views.py:449
+msgid "PSBT's self-transfer address could not be generated from your seed."
+msgstr "PSBT 자가전송 주소는 당신의 시드로부터 생성될 수 없습니다."
+
+#: .\seedsigner\views\psbt_views.py:453
+msgid "Address Verification Failed"
+msgstr "주소 검증 실패"
+
+#: .\seedsigner\views\psbt_views.py:455
+msgid "Discard PSBT"
+msgstr "PSBT 제거"
+
+#: .\seedsigner\views\psbt_views.py:468
+msgid "Approve PSBT"
+msgstr "PSBT 승인"
+
+#: .\seedsigner\views\psbt_views.py:522
+msgid "Select Diff Seed"
+msgstr "다른 시드 선택"
+
+#: .\seedsigner\views\psbt_views.py:533
+msgid "PSBT Error"
+msgstr "PSBT 에러"
+
+#: .\seedsigner\views\psbt_views.py:535
+msgid "Signing Failed"
+msgstr "서명 실패"
+
+#: .\seedsigner\views\psbt_views.py:536
+msgid "Signing with this seed did not add a valid signature."
+msgstr "이 시드로 서명하여 타탕한 서명을 만들지 못했습니다."
+
+#: .\seedsigner\views\scan_views.py:23
+msgid "Scan a QR code"
+msgstr "QR 코드 스캔"
+
+#: .\seedsigner\views\scan_views.py:24
+msgid "QRCode not recognized or not yet supported."
+msgstr "QR 코드 인식 불가 혹은 아직 미지원."
+
+#: .\seedsigner\views\scan_views.py:58 .\seedsigner\views\scan_views.py:158
+#: .\seedsigner\views\view.py:313
+msgid "Error"
+msgstr "에러"
+
+#: .\seedsigner\views\scan_views.py:59
+msgid "Wrong QR Type"
+msgstr "잘못된 QR 타입"
+
+#: .\seedsigner\views\scan_views.py:61
+msgid "Back"
+msgstr "이전"
+
+#: .\seedsigner\views\scan_views.py:70
+msgid "Not yet implemented!"
+msgstr "아직 미개발!"
+
+#: .\seedsigner\views\scan_views.py:159
+msgid "Unknown QR Type"
+msgstr "알려지지 않은 QR 타입"
+
+#: .\seedsigner\views\scan_views.py:160
+msgid "QRCode is invalid or is a data format not yet supported."
+msgstr "QR 코드가 잘못되었거나 데이타 포맷이 아직 지원되지 않습니다."
+
+#: .\seedsigner\views\scan_views.py:161 .\seedsigner\views\seed_views.py:290
+#: .\seedsigner\views\seed_views.py:345 .\seedsigner\views\seed_views.py:953
+#: .\seedsigner\views\seed_views.py:1460 .\seedsigner\views\view.py:377
+msgid "Done"
+msgstr "완료"
+
+#: .\seedsigner\views\scan_views.py:170 .\seedsigner\views\seed_views.py:429
+msgid "Scan PSBT"
+msgstr "PSBT 스캔"
+
+#: .\seedsigner\views\scan_views.py:171
+msgid "Expected a PSBT"
+msgstr "PSBT가 필요함"
+
+#: .\seedsigner\views\scan_views.py:180
+msgid "Scan SeedQR"
+msgstr "SeedQR 스캔"
+
+#: .\seedsigner\views\scan_views.py:181
+msgid "Expected a SeedQR"
+msgstr "SeedQR이 필요함"
+
+#: .\seedsigner\views\scan_views.py:190
+msgid "Scan descriptor"
+msgstr "서술자 스캔"
+
+#: .\seedsigner\views\scan_views.py:191
+msgid "Expected a wallet descriptor QR"
+msgstr "월렛 서술자 QR 코드가 필요함"
+
+#: .\seedsigner\views\scan_views.py:200
+msgid "Scan address QR"
+msgstr "주소 QR 스캔"
+
+#: .\seedsigner\views\scan_views.py:201
+msgid "Expected an address QR"
+msgstr "주소 QR이 필요함"
+
+#: .\seedsigner\views\seed_views.py:32 .\seedsigner\views\seed_views.py:51
+msgid "Load a seed"
+msgstr "시드 가져오기"
+
+#: .\seedsigner\views\seed_views.py:55
+msgid "In-Memory Seeds"
+msgstr "메모리 내 시드"
+
+#: .\seedsigner\views\seed_views.py:95
+msgid "Load the seed to verify"
+msgstr "검증할 시드 가져오기"
+
+#: .\seedsigner\views\seed_views.py:97
+msgid "Select seed to verify"
+msgstr "검증할 시드 선택"
+
+#: .\seedsigner\views\seed_views.py:102
+msgid "Load the seed to sign with"
+msgstr "서명할 시드 가져오기"
+
+#: .\seedsigner\views\seed_views.py:104
+msgid "Select seed to sign with"
+msgstr "서명할 시드 선택"
+
+#: .\seedsigner\views\seed_views.py:163
+msgid " Scan a SeedQR"
+msgstr " SeedQR 스캔"
+
+#: .\seedsigner\views\seed_views.py:166
+msgid " Create a seed"
+msgstr " 새 시드 생성"
+
+#: .\seedsigner\views\seed_views.py:177
+msgid "Load A Seed"
+msgstr "시드 가져오기"
+
+#: .\seedsigner\views\seed_views.py:214
+msgid "Seed Word #%d"
+msgstr "시드 단어 #%d"
+
+#: .\seedsigner\views\seed_views.py:261
+msgid "Review & Edit"
+msgstr "검토 및 수정"
+
+#: .\seedsigner\views\seed_views.py:262 .\seedsigner\views\seed_views.py:385
+#: .\seedsigner\views\tools_views.py:414
+msgid "Discard"
+msgstr "제거"
+
+#: .\seedsigner\views\seed_views.py:273
+msgid "Invalid Mnemonic!"
+msgstr "잘못된 니모닉!"
+
+#: .\seedsigner\views\seed_views.py:275
+msgid "Checksum failure; not a valid seed phrase."
+msgstr "체크섬 오류; 잘못된 시드 문구."
+
+#: .\seedsigner\views\seed_views.py:344
+msgid "Edit passphrase"
+msgstr "Passphrase 편집"
+
+#: .\seedsigner\views\seed_views.py:384
+msgid "Keep Seed"
+msgstr "시드 유지"
+
+#: .\seedsigner\views\seed_views.py:402
+msgid "Discard Seed?"
+msgstr "시드 삭제?"
+
+#: .\seedsigner\views\seed_views.py:404
+msgid "Wipe seed %s from the device?"
+msgstr "장치에서 %s 시드 제거?"
+
+#: .\seedsigner\views\seed_views.py:430 .\seedsigner\views\seed_views.py:1867
+msgid "Verify Addr"
+msgstr "주소 검증"
+
+#: .\seedsigner\views\seed_views.py:434 .\seedsigner\views\seed_views.py:553
+msgid "Backup Seed"
+msgstr "시드 백업"
+
+#: .\seedsigner\views\seed_views.py:435
+msgid "BIP-85 Child Seed"
+msgstr "BIP-85 자식 시드"
+
+#: .\seedsigner\views\seed_views.py:436
+msgid "Discard Seed"
+msgstr "시드 삭제"
+
+#: .\seedsigner\views\seed_views.py:539
+msgid "View Seed Words"
+msgstr "시드 단어 보기"
+
+#: .\seedsigner\views\seed_views.py:540
+msgid "Export as SeedQR"
+msgstr "SeedQR로 내보내기"
+
+#: .\seedsigner\views\seed_views.py:767
+msgid "Xpub can be used to view all future transactions."
+msgstr "Xpub은 미래의 모든 트랜잭션들을 보는데 사용될 수 있습니다."
+
+#: .\seedsigner\views\seed_views.py:812
+msgid "Generating xpub..."
+msgstr "Xpub 생성 중..."
+
+#: .\seedsigner\views\seed_views.py:927
+msgid ""
+"Never input your seed phrase into a device that connects to the internet."
+msgstr "인터넷에 연결된 장치에 시드 문구를 절대 입력하지 마십시오."
+
+#: .\seedsigner\views\seed_views.py:960
+msgid "Child #%d"
+msgstr "자식 %d"
+
+#: .\seedsigner\views\seed_views.py:963
+msgid "Seed Words"
+msgstr "시드 단어"
+
+#: .\seedsigner\views\seed_views.py:1025
+msgid "12 Words"
+msgstr "12 단어"
+
+#: .\seedsigner\views\seed_views.py:1026
+msgid "24 Words"
+msgstr "24 단어"
+
+#: .\seedsigner\views\seed_views.py:1031
+msgid "BIP-85 Num Words"
+msgstr "BIP-85: N 단어"
+
+#: .\seedsigner\views\seed_views.py:1093
+msgid "BIP-85 Index Error"
+msgstr "BIP-85 인덱스 에러"
+
+#: .\seedsigner\views\seed_views.py:1095
+msgid "Invalid Child Index"
+msgstr "잘못된 자식 인덱스"
+
+#: .\seedsigner\views\seed_views.py:1096
+msgid "BIP-85 Child Index must be between 0 and %d."
+msgstr "BIP-85 자식 인덱스는 0과 %d 사이여야 합니다."
+
+#: .\seedsigner\views\seed_views.py:1097 .\seedsigner\views\seed_views.py:1229
+msgid "Try Again"
+msgstr "다시 시도하십시오"
+
+#: .\seedsigner\views\seed_views.py:1122
+msgid "Verify"
+msgstr "검증"
+
+#: .\seedsigner\views\seed_views.py:1123
+msgid "Skip"
+msgstr "건너뛰기"
+
+#: .\seedsigner\views\seed_views.py:1180
+msgid "Verify Word #%d"
+msgstr "단어 #%d 체크"
+
+#: .\seedsigner\views\seed_views.py:1228
+msgid "Review Seed Words"
+msgstr "시드 문구 검토"
+
+#: .\seedsigner\views\seed_views.py:1233
+msgid "Verification Error"
+msgstr "검증 에러"
+
+#: .\seedsigner\views\seed_views.py:1235
+msgid "Wrong Word!"
+msgstr "잘못된 단어!"
+
+#: .\seedsigner\views\seed_views.py:1236
+msgid "Word #%d is not \"%s\"!"
+msgstr "단어 #%d 는 \"%s\"가 아닙니다!"
+
+#: .\seedsigner\views\seed_views.py:1266
+msgid "Backup Verified"
+msgstr "백업 이 검증되었습니다"
+
+#: .\seedsigner\views\seed_views.py:1269
+msgid "All mnemonic backup words were successfully verified!"
+msgstr "모든 니모닉 백업 단어들이 성공적으로 검증되었습니다!"
+
+#: .\seedsigner\views\seed_views.py:1292
+msgid "Standard: 25x25"
+msgstr "표준형: 25x25"
+
+#: .\seedsigner\views\seed_views.py:1293
+msgid "Compact: 21x21"
+msgstr "압축형: 21x21"
+
+#: .\seedsigner\views\seed_views.py:1297
+msgid "Standard: 29x29"
+msgstr "표준형: 29x29"
+
+#: .\seedsigner\views\seed_views.py:1298
+msgid "Compact: 25x25"
+msgstr "압축형: 25x25"
+
+#: .\seedsigner\views\seed_views.py:1317
+msgid "SeedQR Format"
+msgstr "SeedQR 포맷"
+
+#: .\seedsigner\views\seed_views.py:1366
+msgid "SeedQR is your private key!"
+msgstr "SeedQR은 당신의 개인키입니다!"
+
+#: .\seedsigner\views\seed_views.py:1367
+msgid ""
+"Never photograph or scan it into a device that connects to the internet."
+msgstr "인터넷에 연결된 장치에서 이것을 사진찍거나 스캔하지 마십시오."
+
+#: .\seedsigner\views\seed_views.py:1459 .\seedsigner\views\seed_views.py:1500
+#: .\seedsigner\views\seed_views.py:1511 .\seedsigner\views\seed_views.py:1523
+msgid "Confirm SeedQR"
+msgstr "SeedQR 확인"
+
+#: .\seedsigner\views\seed_views.py:1464
+msgid "Confirm SeedQR?"
+msgstr "SeedQR 확인?"
+
+#: .\seedsigner\views\seed_views.py:1501 .\seedsigner\views\seed_views.py:1524
+msgid "Error!"
+msgstr "에러!"
+
+#: .\seedsigner\views\seed_views.py:1502
+msgid "Your transcribed SeedQR does not match your original seed!"
+msgstr "당신의 SeedQR이 원래의 시드 문구와 일치하지 않습니다!"
+
+#: .\seedsigner\views\seed_views.py:1504 .\seedsigner\views\seed_views.py:1527
+msgid "Review SeedQR"
+msgstr "SeedQR 검토"
+
+#: .\seedsigner\views\seed_views.py:1513
+msgid "Your transcribed SeedQR successfully scanned and yielded the same seed."
+msgstr "당신의 SeedQR이 성공적으로 스캔되어 동일한 시드를 생성하였습니다."
+
+#: .\seedsigner\views\seed_views.py:1525
+msgid "Your transcribed SeedQR could not be read!"
+msgstr "당신의 SeedQR을 읽을 수 없습니다!"
+
+#: .\seedsigner\views\seed_views.py:1597
+msgid "Sig type can't be auto-detected from this address. Please specify:"
+msgstr "이 주소에서 Sig 타입을 자동 탐지할 수 없습니다. 아래에서 선택하십시오:"
+
+#: .\seedsigner\views\seed_views.py:1647
+msgid "Can't validate a single sig addr without specifying a seed"
+msgstr "시드를 지정하지 않으면 단일 서명 주소를 검증할 수 없습니다"
+
+#: .\seedsigner\views\seed_views.py:1824
+msgid "Address Verified"
+msgstr "주소가 검증되었습니다"
+
+#: .\seedsigner\views\seed_views.py:1825
+msgid "change address"
+msgstr "잔돈 주소"
+
+#: .\seedsigner\views\seed_views.py:1825
+msgid "receive address"
+msgstr "수신 주소"
+
+#: .\seedsigner\views\seed_views.py:1835
+msgid "Scan Descriptor"
+msgstr "서술자 스캔"
+
+#: .\seedsigner\views\seed_views.py:1866
+msgid "Return to PSBT"
+msgstr "PSBT로 복귀"
+
+#: .\seedsigner\views\seed_views.py:1936 .\seedsigner\views\seed_views.py:2021
+msgid "Current network setting (%s) doesn't match %s"
+msgstr "현재 네트워크 설정(%s)이 %s와 부합되지 않습니다"
+
+#: .\seedsigner\views\settings_views.py:16
+msgid "I/O test"
+msgstr "입출력(I/O) 테스트"
+
+#: .\seedsigner\views\settings_views.py:45
+#: .\seedsigner\views\settings_views.py:52
+msgid "Advanced"
+msgstr "고급기능"
+
+#: .\seedsigner\views\settings_views.py:60
+msgid "Dev Options"
+msgstr "개발자 옵션"
+
+#: .\seedsigner\views\settings_views.py:209
+msgid "Persistent required!"
+msgstr "설정 저장 필요!"
+
+#: .\seedsigner\views\settings_views.py:210
+msgid "To change language, Persistent Settings should be enabled!"
+msgstr "언어를 변경하려면, 설정 저장 기능이 활성화되어야 합니다!"
+
+#: .\seedsigner\views\settings_views.py:212
+msgid "Reboot required!"
+msgstr "재부팅 필요!"
+
+#: .\seedsigner\views\settings_views.py:213
+msgid "If language is changed, system will be rebooted!"
+msgstr "언어가 변경되면, 시스템이 재부팅될 것입니다!"
+
+#: .\seedsigner\views\settings_views.py:245
+msgid "Persistent Settings enabled. Settings saved to SD card."
+msgstr "설정 저장 활성화. 설정이 SD 카드에 저장됨."
+
+#: .\seedsigner\views\settings_views.py:247
+msgid "Settings updated in temporary memory"
+msgstr "설정이 임시 메모리에서 갱신됨"
+
+#: .\seedsigner\views\tools_views.py:28
+msgid " New seed"
+msgstr " 새 시드"
+
+#: .\seedsigner\views\tools_views.py:29
+msgid "New seed"
+msgstr "새 시드"
+
+#: .\seedsigner\views\tools_views.py:30
+msgid "Calc 12th/24th word"
+msgstr "12/24번째 단어 계산"
+
+#: .\seedsigner\views\tools_views.py:32
+msgid "Verify address"
+msgstr "주소 검증"
+
+#: .\seedsigner\views\tools_views.py:39 .\seedsigner\views\view.py:186
+msgid "Tools"
+msgstr "도구"
+
+#: .\seedsigner\views\tools_views.py:119 .\seedsigner\views\tools_views.py:242
+msgid "12 words"
+msgstr "12 단어"
+
+#: .\seedsigner\views\tools_views.py:120 .\seedsigner\views\tools_views.py:243
+msgid "24 words"
+msgstr "24 단어"
+
+#: .\seedsigner\views\tools_views.py:124
+msgid "Mnemonic Length?"
+msgstr "니모닉 길이?"
+
+#: .\seedsigner\views\tools_views.py:191
+msgid "12 words (50 rolls)"
+msgstr "12 단어 (50번 굴리기)"
+
+#: .\seedsigner\views\tools_views.py:192
+msgid "24 words (99 rolls)"
+msgstr "24 단어 (99번 굴리기)"
+
+#: .\seedsigner\views\tools_views.py:196 .\seedsigner\views\tools_views.py:250
+msgid "Mnemonic Length"
+msgstr "니모닉 길이"
+
+#: .\seedsigner\views\tools_views.py:282
+msgid "Coin flip entropy"
+msgstr "동전 플립 엔트로피"
+
+#: .\seedsigner\views\tools_views.py:283
+msgid "Word selection entropy"
+msgstr "단어 선택 엔트로피"
+
+#: .\seedsigner\views\tools_views.py:284
+msgid "Finalize with zeros"
+msgstr "제로로 완결하기"
+
+#: .\seedsigner\views\tools_views.py:391
+msgid "Final Word Calc"
+msgstr "마지막 단어 계산"
+
+#: .\seedsigner\views\tools_views.py:413
+msgid "Load seed"
+msgstr "시드 가져오기"
+
+#: .\seedsigner\views\tools_views.py:441
+msgid "Scan wallet descriptor"
+msgstr "월렛 서술자 스캔"
+
+#: .\seedsigner\views\tools_views.py:499
+msgid "Receive Addresses"
+msgstr "수신 주소"
+
+#: .\seedsigner\views\tools_views.py:500
+msgid "Change Addresses"
+msgstr "잔돈 주소"
+
+#: .\seedsigner\views\tools_views.py:612
+msgid "Calculating addrs..."
+msgstr "주소 계산중..."
+
+#: .\seedsigner\views\tools_views.py:657
+msgid "Next %d"
+msgstr "다음 %d"
+
+#: .\seedsigner\views\tools_views.py:661
+msgid "Change Addrs"
+msgstr "잔돈 주소"
+
+#: .\seedsigner\views\tools_views.py:661
+msgid "Receive Addrs"
+msgstr "수신 주소"
+
+#: .\seedsigner\views\view.py:184
+msgid "Scan"
+msgstr "스캔"
+
+#: .\seedsigner\views\view.py:185
+msgid "Seeds"
+msgstr "시드"
+
+#: .\seedsigner\views\view.py:195
+msgid "Home"
+msgstr "메인메뉴"
+
+#: .\seedsigner\views\view.py:221
+msgid "Restart"
+msgstr "재시작"
+
+#: .\seedsigner\views\view.py:222
+msgid "Power Off"
+msgstr "전원 종료"
+
+#: .\seedsigner\views\view.py:232
+msgid "Reset / Power"
+msgstr "리셋 / 전원"
+
+#: .\seedsigner\views\view.py:301
+msgid "Work In Progress"
+msgstr "작업 중"
+
+#: .\seedsigner\views\view.py:302
+msgid "Not Yet Implemented"
+msgstr "아직 미개발"
+
+#: .\seedsigner\views\view.py:303
+msgid "This is still on our to-do list!"
+msgstr "아직 개발되지 않았습니다!"
+
+#: .\seedsigner\views\view.py:304
+msgid "Back to Main Menu"
+msgstr "메인메뉴로 복귀"
+
+#: .\seedsigner\views\view.py:337
+msgid "Network Mismatch"
+msgstr "네트워크 불일치"
+
+#: .\seedsigner\views\view.py:339
+msgid "Change Setting"
+msgstr "설정 변경"
+
+#: .\seedsigner\views\view.py:346
+msgid "Current network setting (%s) doesn't match current action."
+msgstr "현재 네트워크 설정(%s)이 지금 실행 작업과 맞지 않습니다."
+
+#: .\seedsigner\views\view.py:362
+msgid "System Error"
+msgstr "시스템 에러"
+
+#: .\seedsigner\views\view.py:376
+msgid "Update Setting"
+msgstr "설정 변경"
+
+#: .\seedsigner\views\view.py:383
+msgid "\"%s\" is currently disabled in Settings."
+msgstr "\"%s\"이 설정에서 현재 비활성화 되어 있습니다."
+
+#: .\seedsigner\views\view.py:390
+msgid "Option Disabled"
+msgstr "비활성화 옵션"
+
+#: .\seedsigner\views\view.py:417
+msgid "Security Tip"
+msgstr "보안 팁"
+
+#: .\seedsigner\views\view.py:420
+msgid ""
+"For maximum security,\n"
+"remove the MicroSD card\n"
+"before continuing."
+msgstr "최대 보안을 위해, MicroSD 카드를 제거하십시오."
+
+#~ msgid "Persistent Settings required!"
+#~ msgstr "설정 저장 기능 필요!"
+
+#~ msgid "To change language, Persistent Settings should be enabled."
+#~ msgstr "언어를 변경하기 위해서는 설정 저장 기능이 활성화되어야 합니다."
+
+#~ msgid "Persistent Setting required!"
+#~ msgstr "설정 저장 기능 필요!"
+
+#~ msgid "To change language, Persistent Setting should be enabled."
+#~ msgstr "언어를 변경하기 위해서는, 설정 저장 기능이 활성화되어야 합니다."
+
+#~ msgid "If language is changed, you need to restart system"
+#~ msgstr "언어를 변경하면, 시스템을 재시작해야 합니다"
+
+#~ msgid "If you change Language, you need to reboot system!!"
+#~ msgstr "언어를 변경하면, 시스템을 재부팅해야 합니다!!"
+
+#~ msgid ""
+#~ "PSBT's \"change\" address could not be verified with your multisig wallet "
+#~ "descriptor."
+#~ msgstr ""
+#~ "PSBT의 잔액(change) 주소를 당신의 다중서명 월렛 서술자로 검증할 수 없습니"
+#~ "다."
+
+#~ msgid ""
+#~ "PSBT's \"self-transfer\" address could not be verified with your multisig "
+#~ "wallet descriptor."
+#~ msgstr ""
+#~ "PSBT의 자기전송 주소를 당신의 다중서명 월렛 서술자로 검증할 수 없습니다."
+
+#~ msgid "PSBT's \"change\" address could not be generated from your seed."
+#~ msgstr "PSBT의 잔액(change) 주소가 당신의 시드로부터 생성될 수 없습니다."
+
+#~ msgid ""
+#~ "PSBT's \"self-transfer\" address could not be generated from your seed."
+#~ msgstr "PSBT의 자기전송 주소가 당신의 시드로부터 생성될 수 없습니다."
+
+#~ msgid "Your input: \"{%s}\""
+#~ msgstr "당신의 입력: "

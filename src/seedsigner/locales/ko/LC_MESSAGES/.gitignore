@@ -1,0 +1,4 @@
+# .mo file is typically not included in git since it can be generated from .po file, 
+# but let's add Korean .mo file here just for convenience.
+
+!*.mo

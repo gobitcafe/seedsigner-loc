@@ -53,7 +53,7 @@ class ScanScreen(BaseScreen):
         # Initialize the base class
         super().__post_init__()
 
-        self.instructions_text = "< back  |  " + self.instructions_text
+        self.instructions_text = _("< back  |  ") + self.instructions_text
 
         self.camera = Camera.get_instance()
         self.camera.start_video_stream_mode(resolution=self.resolution, framerate=self.framerate, format="rgb")
@@ -99,7 +99,7 @@ class ScanScreen(BaseScreen):
                     cur_time = time.time()
                     cur_fps = num_frames / (cur_time - start_time)
                     if self.decoder and self.decoder.get_percent_complete() > 0 and self.decoder.is_psbt:
-                        scan_text = str(self.decoder.get_percent_complete()) + "% Complete"
+                        scan_text = str(self.decoder.get_percent_complete()) + _("% Complete")
                         if show_framerate:
                             scan_text += f" {cur_fps:0.2f} | {self.decoder_fps}"
                     else:

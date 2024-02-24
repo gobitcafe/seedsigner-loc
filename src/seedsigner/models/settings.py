@@ -48,7 +48,7 @@ class Settings(Singleton):
 
         version = data.split()[0].split("::")[1]
         if version != "v1":
-            raise InvalidSettingsQRData(f"Unsupported SettingsQR version: {version}")
+            raise InvalidSettingsQRData(_("Unsupported SettingsQR version: %s") % version)
         
         # Start parsing key/value settings at the nth split() index
         split_index = 1
