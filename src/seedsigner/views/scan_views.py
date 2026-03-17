@@ -20,8 +20,8 @@ class ScanView(View):
         dedicated errors when an unexpected QR type is scanned (e.g. Scan PSBT was
         selected but a SeedQR was scanned).
     """
-    instructions_text = "Scan a QR code"
-    invalid_qr_type_message = "QRCode not recognized or not yet supported."
+    instructions_text = _("Scan a QR code")
+    invalid_qr_type_message = _("QRCode not recognized or not yet supported.")
 
 
     def __init__(self):
@@ -55,10 +55,10 @@ class ScanView(View):
                 # Report QR types in more human-readable text (e.g. QRType
                 # `seed__compactseedqr` as "seed: compactseedqr").
                 return Destination(ErrorView, view_args=dict(
-                    title="Error",
-                    status_headline="Wrong QR Type",
+                    title=_("Error"),
+                    status_headline=_("Wrong QR Type"),
                     text=self.invalid_qr_type_message + f""", received "{self.decoder.qr_type.replace("__", ": ").replace("_", " ")}\" format""",
-                    button_text="Back",
+                    button_text=_("Back"),
                     next_destination=Destination(BackStackView, skip_current_view=True),
                 ))
 
@@ -67,7 +67,7 @@ class ScanView(View):
 
                 if not seed_mnemonic:
                     # seed is not valid, Exit if not valid with message
-                    raise Exception("Not yet implemented!")
+                    raise Exception(_("Not yet implemented!"))
                 else:
                     # Found a valid mnemonic seed! All new seeds should be considered
                     #   pending (might set a passphrase, SeedXOR, etc) until finalized.
@@ -155,10 +155,10 @@ class ScanView(View):
             # start everything over.
             self.controller.resume_main_flow = None
             return Destination(ErrorView, view_args=dict(
-                title="Error",
-                status_headline="Unknown QR Type",
-                text="QRCode is invalid or is a data format not yet supported.",
-                button_text="Done",
+                title=_("Error"),
+                status_headline=_("Unknown QR Type"),
+                text=_("QRCode is invalid or is a data format not yet supported."),
+                button_text=_("Done"),
                 next_destination=Destination(MainMenuView, clear_history=True),
             ))
 
@@ -167,8 +167,8 @@ class ScanView(View):
 
 
 class ScanPSBTView(ScanView):
-    instructions_text = "Scan PSBT"
-    invalid_qr_type_message = "Expected a PSBT"
+    instructions_text = _("Scan PSBT")
+    invalid_qr_type_message = _("Expected a PSBT")
 
     @property
     def is_valid_qr_type(self):
@@ -177,8 +177,8 @@ class ScanPSBTView(ScanView):
 
 
 class ScanSeedQRView(ScanView):
-    instructions_text = "Scan SeedQR"
-    invalid_qr_type_message = f"Expected a SeedQR"
+    instructions_text = _("Scan SeedQR")
+    invalid_qr_type_message = _("Expected a SeedQR")
 
     @property
     def is_valid_qr_type(self):
@@ -187,8 +187,8 @@ class ScanSeedQRView(ScanView):
 
 
 class ScanWalletDescriptorView(ScanView):
-    instructions_text = "Scan descriptor"
-    invalid_qr_type_message = "Expected a wallet descriptor QR"
+    instructions_text = _("Scan descriptor")
+    invalid_qr_type_message = _("Expected a wallet descriptor QR")
 
     @property
     def is_valid_qr_type(self):
@@ -197,8 +197,8 @@ class ScanWalletDescriptorView(ScanView):
 
 
 class ScanAddressView(ScanView):
-    instructions_text = "Scan address QR"
-    invalid_qr_type_message = "Expected an address QR"
+    instructions_text = _("Scan address QR")
+    invalid_qr_type_message = _("Expected an address QR")
 
     @property
     def is_valid_qr_type(self):

@@ -197,7 +197,7 @@ class RemoveSDCardToastManagerThread(BaseToastOverlayManagerThread):
     def instantiate_toast(self) -> ToastOverlay:
         return ToastOverlay(
             icon_name=SeedSignerIconConstants.MICROSD,
-            label_text="You can remove\nthe SD card now",
+            label_text=_("You can remove\nthe SD card now"),
             font_size=GUIConstants.BODY_FONT_SIZE,
             height=GUIConstants.BODY_FONT_SIZE * 2 + GUIConstants.BODY_LINE_SPACING + GUIConstants.EDGE_PADDING,
         )
@@ -217,7 +217,7 @@ class SDCardStateChangeToastManagerThread(BaseToastOverlayManagerThread):
         from seedsigner.hardware.microsd import MicroSD
         if action not in [MicroSD.ACTION__INSERTED, MicroSD.ACTION__REMOVED]:
             raise Exception(f"Invalid MicroSD action: {action}")
-        self.message = "SD card removed" if action == MicroSD.ACTION__REMOVED else "SD card inserted"
+        self.message = _("SD card removed") if action == MicroSD.ACTION__REMOVED else _("SD card inserted")
 
         super().__init__(*args, **kwargs)
 

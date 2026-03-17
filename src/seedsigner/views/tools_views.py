@@ -25,18 +25,18 @@ from .view import View, Destination, BackStackView
 
 
 class ToolsMenuView(View):
-    IMAGE = (" New seed", FontAwesomeIconConstants.CAMERA)
-    DICE = ("New seed", FontAwesomeIconConstants.DICE)
-    KEYBOARD = ("Calc 12th/24th word", FontAwesomeIconConstants.KEYBOARD)
-    EXPLORER = "Address Explorer"
-    ADDRESS = "Verify address"
+    IMAGE = (_(" New seed"), FontAwesomeIconConstants.CAMERA)
+    DICE = (_("New seed"), FontAwesomeIconConstants.DICE)
+    KEYBOARD = (_("Calc 12th/24th word"), FontAwesomeIconConstants.KEYBOARD)
+    EXPLORER = _("Address Explorer")
+    ADDRESS = _("Verify address")
 
     def run(self):
         button_data = [self.IMAGE, self.DICE, self.KEYBOARD, self.EXPLORER, self.ADDRESS]
 
         selected_menu_num = self.run_screen(
             ButtonListScreen,
-            title="Tools",
+            title=_("Tools"),
             is_button_text_centered=False,
             button_data=button_data
         )
@@ -116,12 +116,12 @@ class ToolsImageEntropyFinalImageView(View):
 
 class ToolsImageEntropyMnemonicLengthView(View):
     def run(self):
-        TWELVE_WORDS = "12 words"
-        TWENTYFOUR_WORDS = "24 words"
+        TWELVE_WORDS = _("12 words")
+        TWENTYFOUR_WORDS = _("24 words")
         button_data = [TWELVE_WORDS, TWENTYFOUR_WORDS]
 
         selected_menu_num = ButtonListScreen(
-            title="Mnemonic Length?",
+            title=_("Mnemonic Length?"),
             button_data=button_data,
         ).display()
 
@@ -188,12 +188,12 @@ class ToolsImageEntropyMnemonicLengthView(View):
 ****************************************************************************"""
 class ToolsDiceEntropyMnemonicLengthView(View):
     def run(self):
-        TWELVE = "12 words (50 rolls)"
-        TWENTY_FOUR = "24 words (99 rolls)"
+        TWELVE = _("12 words (50 rolls)")
+        TWENTY_FOUR = _("24 words (99 rolls)")
         
         button_data = [TWELVE, TWENTY_FOUR]
         selected_menu_num = ButtonListScreen(
-            title="Mnemonic Length",
+            title=_("Mnemonic Length"),
             is_bottom_list=True,
             is_button_text_centered=True,
             button_data=button_data,
@@ -239,15 +239,15 @@ class ToolsDiceEntropyEntryView(View):
     Calc final word Views
 ****************************************************************************"""
 class ToolsCalcFinalWordNumWordsView(View):
-    TWELVE = "12 words"
-    TWENTY_FOUR = "24 words"
+    TWELVE = _("12 words")
+    TWENTY_FOUR = _("24 words")
 
     def run(self):
         button_data = [self.TWELVE, self.TWENTY_FOUR]
 
         selected_menu_num = self.run_screen(
             ButtonListScreen,
-            title="Mnemonic Length",
+            title=_("Mnemonic Length"),
             is_bottom_list=True,
             is_button_text_centered=True,
             button_data=button_data,
@@ -279,9 +279,9 @@ class ToolsCalcFinalWordFinalizePromptView(View):
         else:
             num_entropy_bits = 3
 
-        COIN_FLIPS = "Coin flip entropy"
-        SELECT_WORD = f"Word selection entropy"
-        ZEROS = "Finalize with zeros"
+        COIN_FLIPS = _("Coin flip entropy")
+        SELECT_WORD = _("Word selection entropy")
+        ZEROS = _("Finalize with zeros")
 
         button_data = [COIN_FLIPS, SELECT_WORD, ZEROS]
         selected_menu_num = ToolsCalcFinalWordFinalizePromptScreen(
@@ -384,11 +384,11 @@ class ToolsCalcFinalWordShowFinalWordView(View):
 
 
     def run(self):
-        NEXT = "Next"
+        NEXT = _("Next")
         button_data = [NEXT]
         selected_menu_num = self.run_screen(
             ToolsCalcFinalWordScreen,
-            title="Final Word Calc",
+            title=_("Final Word Calc"),
             button_data=button_data,
             selected_final_word=self.selected_final_word,
             selected_final_bits=self.selected_final_bits,
@@ -410,8 +410,8 @@ class ToolsCalcFinalWordDoneView(View):
         mnemonic_word_length = len(mnemonic)
         final_word = mnemonic[-1]
 
-        LOAD = "Load seed"
-        DISCARD = ("Discard", None, None, "red")
+        LOAD = _("Load seed")
+        DISCARD = (_("Discard"), None, None, "red")
         button_data = [LOAD, DISCARD]
 
         selected_menu_num = ToolsCalcFinalWordDoneScreen(
@@ -437,10 +437,10 @@ class ToolsCalcFinalWordDoneView(View):
     Address Explorer Views
 ****************************************************************************"""
 class ToolsAddressExplorerSelectSourceView(View):
-    SCAN_SEED = ("Scan a seed", SeedSignerIconConstants.QRCODE)
-    SCAN_DESCRIPTOR = ("Scan wallet descriptor", SeedSignerIconConstants.QRCODE)
-    TYPE_12WORD = ("Enter 12-word seed", FontAwesomeIconConstants.KEYBOARD)
-    TYPE_24WORD = ("Enter 24-word seed", FontAwesomeIconConstants.KEYBOARD)
+    SCAN_SEED = (_("Scan a seed"), SeedSignerIconConstants.QRCODE)
+    SCAN_DESCRIPTOR = (_("Scan wallet descriptor"), SeedSignerIconConstants.QRCODE)
+    TYPE_12WORD = (_("Enter 12-word seed"), FontAwesomeIconConstants.KEYBOARD)
+    TYPE_24WORD = (_("Enter 24-word seed"), FontAwesomeIconConstants.KEYBOARD)
 
 
     def run(self):
@@ -453,7 +453,7 @@ class ToolsAddressExplorerSelectSourceView(View):
         
         selected_menu_num = self.run_screen(
             ButtonListScreen,
-            title="Address Explorer",
+            title=_("Address Explorer"),
             button_data=button_data,
             is_button_text_centered=False,
             is_bottom_list=True,
@@ -496,8 +496,8 @@ class ToolsAddressExplorerSelectSourceView(View):
 
 
 class ToolsAddressExplorerAddressTypeView(View):
-    RECEIVE = "Receive Addresses"
-    CHANGE = "Change Addresses"
+    RECEIVE = _("Receive Addresses")
+    CHANGE = _("Change Addresses")
 
 
     def __init__(self, seed_num: int = None, script_type: str = None, custom_derivation: str = None):
@@ -609,7 +609,7 @@ class ToolsAddressExplorerAddressListView(View):
         else:
             try:
                 from seedsigner.gui.screens.screen import LoadingScreenThread
-                self.loading_screen = LoadingScreenThread(text="Calculating addrs...")
+                self.loading_screen = LoadingScreenThread(text=_("Calculating addrs..."))
                 self.loading_screen.start()
 
                 if addr_storage_key not in data:
@@ -654,11 +654,11 @@ class ToolsAddressExplorerAddressListView(View):
                 end_digits = -4
             button_data.append(f"{cur_index}:{address[:8]}...{address[end_digits:]}")
 
-        button_data.append(("Next {}".format(addrs_per_screen), None, None, None, SeedSignerIconConstants.CHEVRON_RIGHT))
+        button_data.append((_("Next %d") % addrs_per_screen, None, None, None, SeedSignerIconConstants.CHEVRON_RIGHT))
 
         selected_menu_num = self.run_screen(
             ButtonListScreen,
-            title="{} Addrs".format("Receive" if not self.is_change else "Change"),
+            title=_("Receive Addrs") if not self.is_change else _("Change Addrs"),
             button_data=button_data,
             button_font_name=GUIConstants.FIXED_WIDTH_EMPHASIS_FONT_NAME,
             button_font_size=GUIConstants.BUTTON_FONT_SIZE + 4,
