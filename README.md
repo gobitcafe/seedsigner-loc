@@ -8,21 +8,21 @@ This branch includes seedsigner localization experiment. As an example, I added 
 
 Language can be changed in Settings/Advanced/Langugage setting and the settings will be stored in settings.json which is default setting file of seedsigner.
 
-![Image of Settings](img/loc/settings-en.jpg)
+![Image of Settings](docs/img/loc/settings-en.jpg)
 
 New menu "Language" will be shown in Advanced settings:
 
-![Image of Advanced Settings](img/loc/settings-en-adv.jpg)
+![Image of Advanced Settings](docs/img/loc/settings-en-adv.jpg)
 
 Language change will require system rebooting and its warning message will be shown as below. (Since the Language setting will be stored in Settings.json file in SD card, if Persistent Settings option is disabled, it will show 'Persistent required' warning screen and will go back to Advanced Settings screen.)
 
-![Image of Reboot Required](img/loc/settings-en-reboot-req.jpg)
+![Image of Reboot Required](docs/img/loc/settings-en-reboot-req.jpg)
 
-![Image of Language Setting](img/loc/settings-en-lang.jpg)
+![Image of Language Setting](docs/img/loc/settings-en-lang.jpg)
 
 If language is changed, Reboot/PowerOff screen will be shown without Back button: 
 
-![Image of Reboot](img/loc/settings-en-reboot.jpg)
+![Image of Reboot](docs/img/loc/settings-en-reboot.jpg)
 
 
 ### Localization approach
@@ -46,18 +46,18 @@ As a localization example, there is a Korean translation in src/seedsigner/local
 Here are some UI samples of Korean localization.
 
 Main Menu:
-![Image of Korean Home](img/loc/home-ko.jpg)
+![Image of Korean Home](docs/img/loc/home-ko.jpg)
 
 Settings:
-![Image of Korean Settings](img/loc/settings-ko.jpg)
+![Image of Korean Settings](docs/img/loc/settings-ko.jpg)
 
 Settings/Advanced:
-![Image of Korean Advanced Settings](img/loc/settings-ko-adv.jpg)
+![Image of Korean Advanced Settings](docs/img/loc/settings-ko-adv.jpg)
 
 Reboot required: 
-![Image of Korean Reboot Required](img/loc/settings-ko-reboot-req.jpg)
+![Image of Korean Reboot Required](docs/img/loc/settings-ko-reboot-req.jpg)
 
 Language setting:
-![Image of Korean Language Setting](img/loc/settings-ko-lang.jpg)
+![Image of Korean Language Setting](docs/img/loc/settings-ko-lang.jpg)
 
-![Image of Korean Reboot](img/loc/settings-ko-reboot.jpg)
+![Image of Korean Reboot](docs/img/loc/settings-ko-reboot.jpg)
